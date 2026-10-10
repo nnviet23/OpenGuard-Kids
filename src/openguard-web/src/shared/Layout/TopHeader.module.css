@@ -1,0 +1,199 @@
+.topHeader {
+  height: 4rem;
+  /* 64px */
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumbActive {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Nhóm bên phải (Noti + Profile) */
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Noti Dropdown */
+.notiWrapper {
+  position: relative;
+}
+
+.bellBtn {
+  position: relative;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.bellBtn:hover {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+}
+
+.bellBadge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: var(--cisco-danger);
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: bold;
+  width: 1.125rem;
+  height: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--bg-surface);
+}
+
+.notiDropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 320px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.notiHeader {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notiTitle {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-main);
+}
+
+.notiLink {
+  font-size: 0.75rem;
+  color: var(--primary-action);
+  cursor: pointer;
+}
+
+.notiList {
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.notiItem {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 0.75rem;
+}
+
+.notiItem:last-child {
+  border-bottom: none;
+}
+
+.notiItem:hover {
+  background-color: var(--bg-app);
+}
+
+.notiIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notiContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.notiText {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.notiDesc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary-action);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.userRole {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}

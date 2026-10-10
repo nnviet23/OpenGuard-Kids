@@ -1,0 +1,371 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Breadcrumb & Header */
+.breadcrumb {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.headerIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #8B5CF6;
+    /* Màu tím theo mẫu */
+    color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0.25rem 0 0 0;
+}
+
+/* Tabs chính */
+.mainTabs {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 1.5rem;
+}
+
+.tabBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0 0 0.75rem 0;
+    position: relative;
+}
+
+.tabBtn:hover {
+    color: var(--text-main);
+}
+
+.tabActive {
+    color: var(--primary-action);
+    font-weight: 600;
+}
+
+.tabActive::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-action);
+}
+
+/* Banner thông tin (Màu xanh nhạt) */
+.infoBanner {
+    background-color: var(--primary-light);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.infoBannerLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-main);
+}
+
+.infoBannerLeft strong {
+    font-weight: 600;
+}
+
+.linkBtn {
+    font-size: 0.8125rem;
+    color: var(--primary-action);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Card danh sách */
+.listCard {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardTitleWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.countBadge {
+    background-color: var(--primary-light);
+    color: var(--primary-action);
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.primaryBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    background-color: var(--primary-action);
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Search & Filters */
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    width: 20rem;
+}
+
+.searchBox input {
+    border: none;
+    outline: none;
+    font-size: 0.8125rem;
+    width: 100%;
+}
+
+.filterPills {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pill {
+    padding: 0.375rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--border-subtle);
+    background-color: #fff;
+    color: var(--text-muted);
+}
+
+.pillActive {
+    background-color: var(--primary-action);
+    color: #fff;
+    border-color: var(--primary-action);
+}
+
+/* Bảng dữ liệu */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    font-weight: 500;
+}
+
+.table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 0.875rem;
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tr:hover td {
+    background-color: #f8fafc;
+}
+
+/* Cell nội dung */
+.nameCell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+}
+
+.appIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.categoryText {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+.timeText {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+}
+
+/* Badges trạng thái */
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badgeAllowed {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.badgeBlocked {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.badgeLimited {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+/* Hành động */
+.actionCell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actionBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-action);
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.moreBtn {
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-subtle);
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+}
+
+.pageControls {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.pageBtn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    color: var(--text-main);
+}
+
+.pageBtnActive {
+    background-color: var(--primary-light);
+    color: var(--primary-action);
+    font-weight: 600;
+}

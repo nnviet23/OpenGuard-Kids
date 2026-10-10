@@ -17,5 +17,14 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // Cho phép export hook useAuth cùng component trong Context file
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true, allowExportNames: ['useAuth'] },
+      ],
+      // Tắt cảnh báo no-unused-vars nếu có
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    },
   },
 ])

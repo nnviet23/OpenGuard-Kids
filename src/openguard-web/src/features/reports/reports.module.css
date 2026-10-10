@@ -1,0 +1,267 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Header & Toolbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.headerIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary-action);
+    color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 0.25rem 0;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    border: 1px solid var(--border-subtle);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.filterBtn:hover {
+    background-color: var(--bg-app);
+}
+
+.primaryBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-action);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.primaryBtn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* 4 Thẻ KPI */
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.kpiCard {
+    background-color: var(--bg-surface);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.kpiHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.kpiValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.kpiTrend {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.trendUp {
+    color: var(--cisco-danger);
+}
+
+/* Tăng (có thể là xấu nếu tăng thời gian dùng máy) */
+.trendDown {
+    color: var(--cisco-success);
+}
+
+/* Giảm */
+.trendNeutral {
+    color: var(--text-muted);
+}
+
+/* Khối Biểu đồ & Danh sách */
+.grid2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.25rem;
+}
+
+.card {
+    background-color: var(--bg-surface);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+/* Bar Chart (CSS giả lập) */
+.chartArea {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    height: 200px;
+    padding-top: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 0.5rem;
+}
+
+.barCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    height: 100%;
+}
+
+.barSegment {
+    width: 100%;
+    border-radius: 0.25rem;
+    transition: height 0.3s ease;
+}
+
+.barEdu {
+    background-color: var(--cisco-success);
+}
+
+.barEnt {
+    background-color: var(--primary-action);
+}
+
+.barOther {
+    background-color: #cbd5e1;
+}
+
+.barLabel {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+/* Danh mục truy cập */
+.catList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.catItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.catIcon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-light);
+    color: var(--primary-action);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catInfo {
+    flex: 1;
+}
+
+.catNameRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.progressTrack {
+    width: 100%;
+    height: 6px;
+    background-color: var(--border-subtle);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 999px;
+}
