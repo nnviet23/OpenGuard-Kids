@@ -82,9 +82,8 @@ export default function ChatsPage() {
       {/* Tabs */}
       <div className={styles.tabs}>
         <button className={`${styles.tabBtn} ${styles.tabActive}`}>
-          Yêu cầu đang chờ xử lý <span className={styles.badgeTab}>2</span>
+          Lịch sử yêu cầu <span className={styles.badgeTab}>2</span>
         </button>
-        <button className={styles.tabBtn}>Lịch sử yêu cầu</button>
       </div>
 
       {/* Danh sách Card */}

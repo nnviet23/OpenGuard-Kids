@@ -35,10 +35,7 @@ export default function SitesPage() {
 
   return (
     <div className={styles.container}>
-      {/* Breadcrumb */}
-      <div className={styles.breadcrumb}>
-        Trang chủ <ChevronRight size={14} /> Ứng dụng & Website
-      </div>
+
 
       {/* Header */}
       <div className={styles.header}>
@@ -52,18 +49,8 @@ export default function SitesPage() {
       {/* Main Tabs */}
       <div className={styles.mainTabs}>
         <button className={`${styles.tabBtn} ${styles.tabActive}`}><LayoutGrid size={16} /> Ứng dụng</button>
-        <button className={styles.tabBtn}><Globe size={16} /> Website</button>
         <button className={styles.tabBtn}><CheckSquare size={16} /> Danh sách cho phép</button>
         <button className={styles.tabBtn}><XSquare size={16} /> Danh sách chặn</button>
-      </div>
-
-      {/* Info Banner */}
-      <div className={styles.infoBanner}>
-        <div className={styles.infoBannerLeft}>
-          <ShieldCheck size={18} color="var(--primary-action)" />
-          <span>Chế độ lọc hiện tại: <strong>Chặn theo danh sách đen + Giới hạn theo thời gian</strong></span>
-        </div>
-        <button className={styles.linkBtn}>Chỉnh sửa quy tắc <ChevronRight size={14}/></button>
       </div>
 
       {/* --- Khối Danh sách Ứng dụng --- */}

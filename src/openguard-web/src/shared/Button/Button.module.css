@@ -20,14 +20,26 @@
     cursor: not-allowed;
 }
 
-/* Biến thể Primary: Phong cách tối giản Shadcn */
 .primary {
     background-color: var(--primary-action);
-    color: var(--primary-foreground);
+    color: #ffffff;
+    border: 1px solid var(--primary-action);
+    transition: all 0.15s ease;
 }
 
-.primary:hover:not(:disabled) {
-    background-color: var(--primary-action-hover);
+.primary:hover {
+    background-color: #043966;
+    /* Màu Venice Blue đậm hơn một chút */
+    color: #ffffff;
+}
+
+.primary:active {
+    background-color: #032b4d !important;
+    /* Đậm hơn nữa khi click */
+    color: #ffffff !important;
+    transform: translateY(1px);
+    /* Hơi lún xuống tạo cảm giác bấm */
+    border-color: #032b4d !important;
 }
 
 /* Biến thể Outline: Viền mảnh */

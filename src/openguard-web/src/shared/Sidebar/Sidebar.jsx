@@ -14,7 +14,6 @@ export default function Sidebar() {
     { label: 'Thời gian sử dụng', icon: Clock, path: '/time-schedule' },
     { label: 'Ứng dụng & Website', icon: Layers, path: '/sites' },
     { label: 'Yêu cầu từ trẻ', icon: MessageSquare, path: '/chats', badge: '2' },
-    { label: 'Báo cáo', icon: BarChart2, path: '/reports' },
     { label: 'Nhật ký & Kiểm toán', icon: ListCheck, path: '/tasks' },
     { label: 'Cài đặt', icon: Settings, path: '/settings' },
   ];

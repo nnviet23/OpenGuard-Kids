@@ -12,7 +12,6 @@ import SitesPage from './features/sites/page';
 import ChatsPage from './features/chats/page';
 import UsersPage from './features/users/page';
 import TimeSchedulePage from './features/time-schedule/page';
-import ReportsPage from './features/reports/page';
 import SettingsPage from './features/settings/page';
 
 const ProtectedRoute = ({ children }) => {
@@ -49,7 +48,6 @@ export default function App() {
             <Route path="time-schedule" element={<TimeSchedulePage />} />
             <Route path="sites" element={<SitesPage />} />
             <Route path="chats" element={<ChatsPage />} />
-            <Route path="reports" element={<ReportsPage />} />
             <Route path="tasks" element={<TasksPage />} />
             <Route path="users" element={<UsersPage />} />
             <Route path="settings" element={<SettingsPage />} />

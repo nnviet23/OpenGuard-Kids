@@ -16,10 +16,6 @@ export default function TimeSchedulePage() {
 
   return (
     <div className={styles.container}>
-      {/* Breadcrumb */}
-      <div className={styles.breadcrumb}>
-        Thời gian sử dụng <ChevronRight size={14} /> Quản lý thời gian và lịch tuần
-      </div>
 
       {/* Header */}
       <div className={styles.header}>

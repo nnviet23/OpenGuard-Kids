@@ -1,16 +1,54 @@
-# React + Vite
+# OpenGuard Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard phụ huynh xây dựng bằng React 19, Vite và React Router. Frontend gọi backend tại `http://localhost:8000/api/v1`.
 
-Currently, two official plugins are available:
+## Yêu cầu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 18 trở lên
+- npm
+- Backend OpenGuard Server chạy tại cổng `8000`
 
-## React Compiler
+## Cài đặt và chạy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```powershell
+cd src/openguard-web
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Mở URL Vite hiển thị trong terminal, thông thường là `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Các lệnh khác
+
+```powershell
+npm run build     # tạo bản build production trong dist/
+npm run preview   # xem thử bản build production
+npm run lint      # chạy ESLint
+```
+
+## Route hiện có
+
+- Auth: `/login`, `/sign-up`, `/forgot-password`, `/otp`
+- Dashboard: `/`
+- Trang được bảo vệ: `/time-schedule`, `/sites`, `/chats`, `/tasks`, `/users`, `/settings`
+
+Trang `/reports` có file giao diện trong source nhưng hiện chưa được đăng ký trong `App.jsx`.
+
+## Cấu trúc chính
+
+- `src/App.jsx`: provider, router và protected route
+- `src/core/`: API client, authentication context và sidebar context
+- `src/features/`: các trang auth và dashboard theo tính năng
+- `src/shared/`: Button, Card, Input, Badge, Sidebar và Layout dùng chung
+- `public/`: tài nguyên tĩnh
+
+## Kết nối API
+
+`src/core/api-client.js` dùng Axios với `withCredentials: true`, nên server phải cho phép CORS từ `http://localhost:5173`.
+
+Tài khoản mock của server:
+
+```text
+Email: parent@openguard.com
+Mật khẩu: OpenGuard@2026
+```
