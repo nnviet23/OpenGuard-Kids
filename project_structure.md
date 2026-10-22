@@ -33,57 +33,68 @@ OpenGuardKid/
     │           └── devices/
     │               ├── router.py
     │               └── schemas.py
-    ├── openguard-web/
-    │   ├── .gitignore
-    │   ├── README.md
-    │   ├── eslint.config.js
-    │   ├── index.html
-    │   ├── package.json
-    │   ├── package-lock.json
-    │   ├── postcss.config.js
-    │   ├── vite.config.js
-    │   ├── public/
-    │   │   ├── favicon.svg
-    │   │   └── icons.svg
-    │   └── src/
-    │       ├── App.jsx
-    │       ├── global.css
-    │       ├── index.css
-    │       ├── main.jsx
-    │       ├── tailwind.config.js
-    │       ├── assets/
-    │       │   ├── hero.png
-    │       │   ├── react.svg
-    │       │   └── vite.svg
-    │       ├── core/
-    │       │   ├── api-client.js
-    │       │   ├── AuthContext.jsx
-    │       │   └── SidebarContext.jsx
-    │       ├── features/
-    │       │   ├── auth/
-    │       │   │   ├── auth-layout.jsx + auth-layout.module.css
-    │       │   │   ├── forgot-password/index.jsx + forgot-password.module.css
-    │       │   │   ├── otp/index.jsx + otp.module.css
-    │       │   │   ├── sign-in/index.jsx + sign-in.module.css
-    │       │   │   ├── sign-in/components/user-auth-form.jsx
-    │       │   │   └── sign-up/index.jsx + sign-up.module.css
-    │       │   ├── chats/page.jsx + chats.module.css
-    │       │   ├── dashboard/page.jsx + dashboard.module.css
-    │       │   ├── reports/page.jsx + reports.module.css
-    │       │   ├── settings/page.jsx + settings.module.css
-    │       │   ├── sites/page.jsx + sites.module.css
-    │       │   ├── tasks/page.jsx + tasks.module.css
-    │       │   ├── time-schedule/page.jsx + time.module.css
-    │       │   └── users/page.jsx + users.module.css
-    │       └── shared/
-    │           ├── index.js
-    │           ├── Badge/Badge.jsx + Badge.module.css
-    │           ├── Button/Button.jsx + Button.module.css
-    │           ├── Card/Card.jsx + Card.module.css
-    │           ├── Input/Input.jsx + Input.module.css
-    │           ├── Layout/DashboardLayout.jsx
-    │           ├── Layout/TopHeader.jsx + TopHeader.module.css
-    │           └── Sidebar/Sidebar.jsx + Sidebar.module.css
+        openguard-web/
+        ├── index.html
+        ├── package.json
+        ├── vite.config.js
+        ├── public/
+        │   └── favicon.svg
+        └── src/
+            ├── main.jsx                     # Điểm khởi chạy React (ReactDOM.createRoot)
+            ├── App.jsx                      # Cấu hình Router (0_auth -> 7_settings)
+            │
+            ├── styles/                      # Hệ thống style tập trung (Không Tailwind)
+            │   ├── tokens.css               # Color tokens, fonts, variables đã tạo
+            │   └── global.css               # Reset CSS, typography, layout chung
+            │
+            ├── context/                     # Quản lý State toàn cục
+            │   ├── AuthContext.jsx          # Trạng thái đăng nhập phụ huynh, phiên 12h
+            │   └── ChildContext.jsx         # Trẻ/Thiết bị đang chọn (Bé Nam Việt / Bé Mai Anh)
+            │
+            ├── services/                    # Tầng giao tiếp Backend FastAPI
+            │   ├── api.js                   # Wrapper fetch/axios (Credentials, Cookie HttpOnly)
+            │   └── websocket.js             # Kết nối WebSocket lệnh khẩn (/ws/commands)
+            │
+            ├── components/                  # Thành phần dùng chung (Shared UI)
+            │   ├── layout/
+            │   │   ├── DashboardLayout.jsx  # Khung bọc gồm Sidebar + Topbar + Main
+            │   │   ├── Sidebar.jsx          # Thanh điều hướng 7 trang
+            │   │   ├── Topbar.jsx           # Header chọn trẻ & thông tin phụ huynh
+            │   │   └── EmergencyBar.jsx     # Thanh lệnh khẩn (Khóa, Mở, +15p)
+            │   ├── common/
+            │   │   ├── Badge.jsx            # Nhãn trạng thái sắc cạnh (badge-mono)
+            │   │   ├── Button.jsx           # Nút bấm phong cách pixel/crisp
+            │   │   ├── Card.jsx             # Khung thẻ nội dung (card-box)
+            │   │   └── Modal.jsx            # Hộp thoại popup dùng chung
+            │   └── icons/
+            │       └── PixelIcons.jsx       # Toàn bộ bộ icon 2D SVG monochrome
+            │
+            └── features/                    # 8 Phân hệ chức năng chính
+                ├── 0_auth/                  # Đăng nhập, Quên mật khẩu, Xác thực 2FA OTP
+                │   ├── LoginPage.jsx
+                │   └── ForgotPasswordPage.jsx
+                ├── 1_overview/              # Trang 1: Tổng quan, 4 KPI, Top Domain, Top App
+                │   ├── OverviewPage.jsx
+                │   ├── components/WeeklyBarChart.jsx
+                │   └── components/CategoryDonutChart.jsx
+                ├── 2_schedule/              # Trang 2: Lịch tuần (Ma trận 7x48, Quota ngày)
+                │   ├── SchedulePage.jsx
+                │   └── components/TimeMatrix7x48.jsx
+                ├── 3_requests/              # Trang 3: Yêu cầu từ trẻ (Duyệt 1 chạm, gửi lời nhắn)
+                │   ├── RequestsPage.jsx
+                │   └── components/DecisionModal.jsx
+                ├── 4_apps/                  # Trang 4: Ứng dụng & Web (DNS, SHA-256, Danh mục)
+                │   ├── AppsPage.jsx
+                │   └── components/AddRuleModal.jsx
+                ├── 5_reports/               # Trang 5: Báo cáo, Sum theo nhóm, Xuất CSV/PDF
+                │   ├── ReportsPage.jsx
+                │   └── components/EyeBreakWidget.jsx
+                ├── 6_audit/                 # Trang 6: Nhật ký kiểm toán, Quyền xóa dữ liệu NĐ 13
+                │   ├── AuditPage.jsx
+                │   └── components/EraseDataModal.jsx
+                └── 7_settings/              # Trang 7: Mật khẩu Argon2id, TOTP, Quản lý thiết bị
+                    ├── SettingsPage.jsx
+                    └── components/DeviceList.jsx
     ├── openguard-agent/
     │   ├── requirements.txt
     │   └── src/

@@ -1,0 +1,50 @@
+.targetCard {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    background: var(--bg-subtle);
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.targetHighlight {
+    font-family: var(--font-mono);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 8px 10px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    outline: none;
+    resize: none;
+    color: var(--text-main);
+    background: var(--bg-surface);
+    margin-bottom: 16px;
+}
+
+.textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}

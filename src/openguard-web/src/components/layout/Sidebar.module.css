@@ -1,0 +1,112 @@
+.sidebar {
+    width: var(--sidebar-width);
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.brand {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badge {
+    background: var(--color-primary);
+    color: var(--text-white);
+    font-family: var(--font-mono);
+    font-weight: 800;
+    font-size: 0.95rem;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary-hover);
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+.sub {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: block;
+}
+
+.menu {
+    padding: 16px 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.navLink:hover {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.active {
+    background: var(--color-primary);
+    color: var(--text-white);
+}
+
+.active:hover {
+    background: var(--color-primary);
+    color: var(--text-white);
+}
+
+.linkContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter {
+    background: var(--color-danger);
+    color: var(--text-white);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: var(--radius-xs);
+}
+
+.bottom {
+    padding: 14px 20px;
+    border-top: 1px solid var(--border-light);
+    font-size: 0.725rem;
+    color: var(--text-sub);
+    background: var(--bg-subtle);
+    font-family: var(--font-mono);
+}

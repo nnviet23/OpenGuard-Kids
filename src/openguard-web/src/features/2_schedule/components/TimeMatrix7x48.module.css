@@ -1,0 +1,139 @@
+.matrixCard {
+    overflow-x: auto;
+    user-select: none;
+}
+
+.controlsBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.brushTools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brushLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.brushBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background: var(--bg-surface);
+    color: var(--text-muted);
+    transition: all 0.15s ease;
+}
+
+.activeAllow {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.activeBlock {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+    box-shadow: 0 0 0 1px var(--color-danger);
+}
+
+.brushIndicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+}
+
+.presetGroup {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.matrixTable {
+    width: 100%;
+    min-width: 980px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.headerTime th {
+    padding: 4px 0;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-align: center;
+    font-weight: 700;
+}
+
+.dayLabel {
+    width: 60px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    padding-right: 8px;
+    white-space: nowrap;
+}
+
+.daySum {
+    width: 90px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-align: right;
+    padding-left: 8px;
+    white-space: nowrap;
+}
+
+.cell {
+    height: 28px;
+    background: #f1f5f9;
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    transition: background 0.1s ease;
+}
+
+.cell:hover {
+    filter: brightness(0.92);
+}
+
+.allowed {
+    background: var(--color-primary);
+}
+
+.blocked {
+    background: #e2e8f0;
+}
+
+.hourBoundary {
+    margin-right: 2px;
+}
+
+.footerNotes {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}

@@ -1,61 +1,47 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './core/AuthContext';
-import SignInPage from './features/auth/sign-in';
-import SignUpPage from './features/auth/sign-up';
-import ForgotPasswordPage from './features/auth/forgot-password';
-import OtpPage from './features/auth/otp';
+import DashboardLayout from './components/layout/DashboardLayout';
 
-import { DashboardLayout } from './shared';
-import DashboardPage from './features/dashboard/page';
-import TasksPage from './features/tasks/page';
-import SitesPage from './features/sites/page';
-import ChatsPage from './features/chats/page';
-import UsersPage from './features/users/page';
-import TimeSchedulePage from './features/time-schedule/page';
-import SettingsPage from './features/settings/page';
+// Features 0: Auth
+import SignIn from './features/0_auth/SignIn';
+import SignUp from './features/0_auth/SignUp';
+import ForgotPassword from './features/0_auth/ForgotPassword';
+import Otp2FA from './features/0_auth/Otp2FA';
+import OtpSignUp from './features/0_auth/OtpSignUp';
 
-const ProtectedRoute = ({ children }) => {
-  const { parent, loading } = useAuth();
-  if (loading) {
-    return <div style={{ padding: '2rem', textAlign: 'center' }}>Đang tải...</div>;
-  }
-  return parent ? children : <Navigate to="/login" replace />;
-};
-
-
+// Features 1 -> 7: Dashboard
+import OverviewPage from './features/1_overview/OverviewPage';
+import SchedulePage from './features/2_schedule/SchedulePage';
+import RequestsPage from './features/3_requests/RequestsPage';
+import AppsPage from './features/4_apps/AppsPage';
+import ReportsPage from './features/5_reports/ReportsPage';
+import AuditPage from './features/6_audit/AuditPage';
+import SettingsPage from './features/7_settings/SettingsPage';
 
 export default function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Routes>
-          {/* Nhóm Auth */}
-          <Route path="/login" element={<SignInPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
-          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-          <Route path="/otp" element={<OtpPage />} />
+    <BrowserRouter>
+      <Routes>
+        {/* Auth Routes */}
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/auth/signup" element={<SignUp />} />
+        <Route path="/auth/forgot-password" element={<ForgotPassword />} />
+        <Route path="/auth/2fa" element={<Otp2FA />} />
+        <Route path="/auth/verify-email" element={<OtpSignUp />} />
 
-          {/* Nhóm Dashboard bọc bởi DashboardLayout */}
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <DashboardLayout />
-              </ProtectedRoute>
-            }
-          >
-            <Route index element={<DashboardPage />} />
-            <Route path="time-schedule" element={<TimeSchedulePage />} />
-            <Route path="sites" element={<SitesPage />} />
-            <Route path="chats" element={<ChatsPage />} />
-            <Route path="tasks" element={<TasksPage />} />
-            <Route path="users" element={<UsersPage />} />
-            <Route path="settings" element={<SettingsPage />} />
-          </Route>
+        {/* Protected Dashboard Layout */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/" element={<Navigate to="/overview" replace />} />
+          <Route path="/overview" element={<OverviewPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/requests" element={<RequestsPage />} />
+          <Route path="/apps" element={<AppsPage />} />
+          <Route path="/reports" element={<ReportsPage />} />
+          <Route path="/audit" element={<AuditPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+        </Route>
 
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

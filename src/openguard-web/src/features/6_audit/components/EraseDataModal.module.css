@@ -1,0 +1,72 @@
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-danger);
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.legalNotice {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.warningBox {
+    background: var(--color-danger-bg);
+    border: 1px solid #fca5a5;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    color: #7f1d1d;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.formGroup {
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background: var(--bg-subtle);
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+    background: var(--bg-surface);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}

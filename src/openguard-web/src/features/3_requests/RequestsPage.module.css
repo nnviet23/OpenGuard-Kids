@@ -1,0 +1,207 @@
+.pageHeader {
+    margin-bottom: 22px;
+}
+
+.heading {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.subheading {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.kpiRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.kpiTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.kpiTitle {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.4px;
+}
+
+.kpiNum {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.kpiBottom {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.tabGroup {
+    display: flex;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 3px;
+    gap: 2px;
+}
+
+.tabBtn {
+    background: transparent;
+    border: none;
+    padding: 6px 14px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s ease;
+}
+
+.tabBtn:hover {
+    color: var(--text-main);
+    background: var(--bg-subtle);
+}
+
+.activeTab {
+    background: var(--color-primary);
+    color: var(--text-white);
+}
+
+.activeTab:hover {
+    background: var(--color-primary);
+    color: var(--text-white);
+}
+
+.tabBadge {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 1px 5px;
+    border-radius: var(--radius-xs);
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.activeTab .tabBadge {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--text-white);
+}
+
+.select {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background: var(--bg-subtle);
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.select:focus {
+    border-color: var(--color-primary);
+}
+
+.timeCol {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.deviceSub {
+    font-size: 0.72rem;
+    color: var(--text-sub);
+    display: block;
+}
+
+.msgBubble {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    background: var(--bg-subtle);
+    border-left: 2px solid var(--color-primary);
+    padding: 4px 8px;
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+    margin-top: 4px;
+    display: inline-block;
+    max-width: 380px;
+}
+
+.replyText {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 4px;
+    display: block;
+}
+
+.actionBtnGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btnDecision {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-xs);
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--bg-subtle);
+    transition: all 0.12s ease;
+}
+
+.approve {
+    border-color: #a7f3d0;
+    color: var(--color-success);
+}
+
+.approve:hover {
+    background: var(--color-success);
+    color: var(--text-white);
+}
+
+.reject {
+    border-color: #fecaca;
+    color: var(--color-danger);
+}
+
+.reject:hover {
+    background: var(--color-danger);
+    color: var(--text-white);
+}
+
+@media (max-width: 1120px) {
+    .kpiRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

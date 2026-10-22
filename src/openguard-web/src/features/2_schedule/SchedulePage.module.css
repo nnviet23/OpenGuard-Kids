@@ -1,0 +1,109 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.subheading {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.actionControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quotaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.quotaCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kpiTitle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.quotaInputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quotaInput {
+  width: 90px;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  outline: none;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.quotaInput:focus {
+  border-color: var(--color-primary);
+}
+
+.quotaUnit {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.quotaNote {
+  font-size: 0.725rem;
+  color: var(--text-sub);
+  margin-top: 6px;
+  display: block;
+}
+
+.ruleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ruleTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.ruleDesc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 960px) {
+  .quotaGrid {
+    grid-template-columns: 1fr;
+  }
+}

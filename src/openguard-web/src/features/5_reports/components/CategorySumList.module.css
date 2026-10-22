@@ -1,0 +1,58 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.labelGroup {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.chipColor {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.timeVal {
+    font-family: var(--font-mono);
+    font-weight: 700;
+}
+
+.barTrack {
+    height: 8px;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-xs);
+    overflow: hidden;
+}
+
+.barFill {
+    height: 100%;
+    border-radius: var(--radius-xs);
+}
+
+.adviceBox {
+    background: var(--bg-subtle);
+    padding: 8px 10px;
+    border-radius: var(--radius-xs);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border: 1px solid var(--border-light);
+    margin-top: 4px;
+}

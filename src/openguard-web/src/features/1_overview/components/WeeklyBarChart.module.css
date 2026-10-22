@@ -1,0 +1,186 @@
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+/* Cột trái: 7 thanh bar chart */
+.barsSection {
+    flex: 1.35;
+    display: flex;
+    flex-direction: column;
+}
+
+.chartWrap {
+    display: flex;
+    height: 180px;
+    gap: 12px;
+    align-items: flex-end;
+    padding-top: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 8px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.col:hover {
+    transform: translateY(-2px);
+}
+
+.track {
+    width: 100%;
+    max-width: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-xs);
+    overflow: hidden;
+    transition: all 0.15s ease;
+}
+
+.selectedTrack {
+    box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.fillStudy {
+    background: var(--chart-study);
+    width: 100%;
+}
+
+.fillLeisure {
+    background: var(--chart-leisure);
+    width: 100%;
+}
+
+.dayLabel {
+    font-family: var(--font-mono);
+    font-size: 0.725rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.selectedLabel {
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+.hintText {
+    font-size: 0.72rem;
+    color: var(--text-sub);
+}
+
+/* Cột phải: Bảng chi tiết chú thích % và tổng giờ */
+.summaryPanel {
+    flex: 1;
+    padding-left: 18px;
+    border-left: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dayHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dayTitle {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.sumBadgeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.timeSum {
+    font-family: var(--font-mono);
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+}
+
+.labelSub {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.775rem;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-main);
+}
+
+.colorBox {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.metaGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.durationTxt {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.percentTxt {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    min-width: 32px;
+    text-align: right;
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .summaryPanel {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--border-light);
+        padding-top: 12px;
+    }
+}

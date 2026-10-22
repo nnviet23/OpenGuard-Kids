@@ -1,0 +1,42 @@
+.deviceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    transition: opacity 0.2s ease;
+}
+
+.deviceMeta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.deviceName {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.deviceDetails {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-family: var(--font-mono);
+}
+
+.deviceDate {
+    font-size: 0.72rem;
+    color: var(--text-sub);
+    margin-top: 2px;
+}
+
+.revokedNotice {
+    font-size: 0.75rem;
+    color: var(--color-danger);
+    font-weight: 700;
+    margin-top: 2px;
+}
