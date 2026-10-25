@@ -103,7 +103,8 @@ def today_summary(db: Session, child: Child) -> dict:
     today = local_date_str()
     rows = db.execute(select(DailyUsage).where(DailyUsage.child_id == child.id, DailyUsage.usage_date == today)).scalars().all()
     used = sum(r.used_seconds for r in rows)
-    bonus = sum(r.bonus_seconds for r in rows)
+    # Thưởng được cộng cho MỖI thiết bị của trẻ với cùng số phút, nên lấy max (không cộng dồn) để không tính đôi.
+    bonus = max((r.bonus_seconds for r in rows), default=0)
     limit = allowed_minutes_today(pol) * 60 + bonus
     apps, sites, blocks = Counter(), Counter(), []
     for e in db.execute(select(Event).where(Event.child_id == child.id, Event.ts >= utcnow() - timedelta(days=2))
