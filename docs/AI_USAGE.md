@@ -16,13 +16,15 @@
 | Bảng phân loại ≥200 tên miền | Sinh; tên miền "không phù hợp" là tên giả đuôi `.test` |
 
 ## 3. Đã kiểm chứng và chưa kiểm chứng
-**Đã chạy/kiểm tra:** toàn bộ bộ test (xem `docs/TEST_REPORT.txt`), TLS + ghim chứng chỉ trên localhost, build + lint web, ảnh chụp giao diện desktop/mobile bằng Playwright, đo độ trễ lan truyền chính sách/lệnh khóa trên máy giả lập.
+**Kiểm tra tự động:** 78 bài kiểm thử đều qua (xem docs/TEST_REPORT.txt); build và lint web; TLS + ghim chứng chỉ trên localhost.
 
-**Chưa kiểm chứng (nhóm phải tự làm):**
-- Chạy dịch vụ Windows, tray PyQt6, DPAPI, `netsh` đổi DNS, khóa phiên, DNS proxy cổng 53 trên Windows thật.
-- Bắt gói Wireshark, đo hiệu năng thật, thử vượt rào (báo cáo mạng M1–M6).
-- **Trích dẫn pháp lý** trong PRIVACY.md: phải đối chiếu lại với văn bản gốc trên các cổng chính thức trước khi nộp.
-- Video demo, báo cáo BaoCao.docx và BaoCaoKyThuatMang.pdf do nhóm làm.
+**Nhóm đã thử trên Windows 11 (tự chạy, chụp ảnh làm bằng chứng):**
+khóa ngay / mở khóa; cảnh báo hạn mức hiện ở góc dưới phải; biểu tượng khay và vòng yêu cầu hai chiều;
+cộng giờ (phát hiện và sửa lỗi cộng đôi); chặn ứng dụng theo SHA-256 kể cả đổi tên tệp;
+phát hiện chỉnh đồng hồ; chạy offline và gửi bù sự kiện.
+
+**Chưa kiểm chứng:** DNS proxy và đổi DNS card mạng trên Windows thật; dịch vụ Windows (`service install`);
+Wireshark và đo hiệu năng cho báo cáo mạng; trích dẫn pháp lý trong PRIVACY.md cần đối chiếu nguồn chính thức.
 
 ## 4. Nhật ký quyết định (điền/sửa)
 | Ngày | Nội dung hỏi AI | Kết quả | Nhóm đã kiểm tra/sửa gì |
