@@ -1,0 +1,27 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dữ liệu & bí mật – KHÔNG commit
+.env
+*.env
+!.env.example
+src/openguard-server/data/
+*.db
+*.db-wal
+*.db-shm
+*.pem
+*.key
+.dev_master_key
+
+# Web
+node_modules/
+src/openguard-web/dist/
+
+# Hệ điều hành / IDE
+.DS_Store
+.vscode/
+.idea/

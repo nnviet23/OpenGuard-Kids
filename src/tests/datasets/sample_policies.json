@@ -1,0 +1,34 @@
+{
+  "_note": "Mẫu thân yêu cầu PUT /api/v1/children/{id}/policy. Schedule rút gọn: 'allow' liệt kê khoảng giờ [từ, đến) cho từng ngày (Thứ 2 = 0). Dùng schedule 7x48 bool khi gọi API thật.",
+  "tre_6_11_ngay_hoc": {
+    "weekday_limit_minutes": 90,
+    "weekend_limit_minutes": 150,
+    "schedule_allow_hours": {"mon-fri": [[18, 21]], "sat-sun": [[8, 21]]},
+    "category_actions": {"education": "allow", "entertainment": "limit", "social": "block", "games": "limit", "inappropriate": "block", "uncategorized": "log"},
+    "group_budgets": {"games": 45, "entertainment": 30},
+    "domain_overrides": {"scratch.mit.edu": "allow"},
+    "app_rules": [{"name": "minecraft.exe", "action": "limit", "group": "games"}],
+    "safesearch": true
+  },
+  "tre_6_11_nghi_he": {
+    "weekday_limit_minutes": 180,
+    "weekend_limit_minutes": 240,
+    "schedule_allow_hours": {"mon-sun": [[8, 12], [14, 21]]},
+    "category_actions": {"education": "allow", "entertainment": "limit", "social": "block", "games": "limit", "inappropriate": "block", "uncategorized": "log"},
+    "group_budgets": {"games": 90},
+    "domain_overrides": {},
+    "app_rules": [],
+    "safesearch": true
+  },
+  "che_do_thu_nghiem_nghiem_ngat": {
+    "weekday_limit_minutes": 2,
+    "weekend_limit_minutes": 2,
+    "schedule_allow_hours": {"mon-sun": [[0, 24]]},
+    "category_actions": {"education": "allow", "entertainment": "block", "social": "block", "games": "block", "inappropriate": "block", "uncategorized": "block"},
+    "group_budgets": {},
+    "domain_overrides": {},
+    "app_rules": [],
+    "safesearch": true,
+    "_ghi_chu": "Dùng để kiểm thử nhanh khóa máy: hết 2 phút -> cảnh báo -> ân hạn 60 giây -> khóa."
+  }
+}

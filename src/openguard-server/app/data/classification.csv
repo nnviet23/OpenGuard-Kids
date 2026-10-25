@@ -1,0 +1,306 @@
+domain,category,note
+khanacademy.org,education,
+wikipedia.org,education,
+vi.wikipedia.org,education,
+wikimedia.org,education,
+coursera.org,education,
+edx.org,education,
+duolingo.com,education,
+classroom.google.com,education,
+scratch.mit.edu,education,
+code.org,education,
+codecademy.com,education,
+w3schools.com,education,
+mathway.com,education,
+desmos.com,education,
+geogebra.org,education,
+britannica.com,education,
+nationalgeographic.com,education,
+kids.nationalgeographic.com,education,
+ted.com,education,
+ed.ted.com,education,
+brilliant.org,education,
+udemy.com,education,
+hocmai.vn,education,
+vnedu.vn,education,
+olm.vn,education,
+moet.gov.vn,education,
+violet.vn,education,
+hoc247.net,education,
+tuyensinh247.com,education,
+loigiaihay.com,education,
+vietjack.com,education,
+giaoducthoidai.vn,education,
+thuviensach.vn,education,
+sachmem.vn,education,
+baitap123.com,education,
+openstax.org,education,
+mit.edu,education,
+ocw.mit.edu,education,
+stanford.edu,education,
+harvard.edu,education,
+oxfordlearnersdictionaries.com,education,
+dictionary.cambridge.org,education,
+merriam-webster.com,education,
+translate.google.com,education,
+tracau.vn,education,
+tudienso.com,education,
+wolframalpha.com,education,
+phet.colorado.edu,education,
+nasa.gov,education,
+kids.nasa.gov,education,
+esa.int,education,
+space.com,education,
+sciencedaily.com,education,
+sciencekids.co.nz,education,
+mathsisfun.com,education,
+bbc.co.uk,education,
+bitesize.bbc.co.uk,education,
+typing.com,education,
+keybr.com,education,
+nitrotype.com,education,
+typingclub.com,education,
+ixl.com,education,
+prodigygame.com,education,
+quizlet.com,education,
+kahoot.com,education,
+padlet.com,education,
+canva.com,education,
+docs.google.com,education,
+drive.google.com,education,
+meet.google.com,education,
+zoom.us,education,
+teams.microsoft.com,education,
+office.com,education,
+onenote.com,education,
+tinkercad.com,education,
+blockly.games,education,
+lightbot.com,education,
+tynker.com,education,
+mathplayground.com,education,
+storyline.org,education,
+readworks.org,education,
+starfall.com,education,
+abcya.com,education,
+funbrain.com,education,
+pbskids.org,education,
+youtube.com,entertainment,
+youtu.be,entertainment,
+youtubekids.com,entertainment,
+netflix.com,entertainment,
+disneyplus.com,entertainment,
+spotify.com,entertainment,
+soundcloud.com,entertainment,
+twitch.tv,entertainment,
+vimeo.com,entertainment,
+dailymotion.com,entertainment,
+tiktok.com,social,
+zingmp3.vn,entertainment,
+nhaccuatui.com,entertainment,
+tv360.vn,entertainment,
+fptplay.vn,entertainment,
+vieon.vn,entertainment,
+galaxyplay.vn,entertainment,
+clip.vn,entertainment,
+imdb.com,entertainment,
+crunchyroll.com,entertainment,
+primevideo.com,entertainment,
+hbomax.com,entertainment,
+max.com,entertainment,
+bilibili.com,entertainment,
+deezer.com,entertainment,
+pandora.com,entertainment,
+tunein.com,entertainment,
+9gag.com,entertainment,
+imgur.com,entertainment,
+giphy.com,entertainment,
+tenor.com,entertainment,
+buzzfeed.com,entertainment,
+vnexpress.net,entertainment,
+tuoitre.vn,entertainment,
+thanhnien.vn,entertainment,
+dantri.com.vn,entertainment,
+zingnews.vn,entertainment,
+kenh14.vn,entertainment,
+24h.com.vn,entertainment,
+tienphong.vn,entertainment,
+vietnamnet.vn,entertainment,
+laodong.vn,entertainment,
+nhandan.vn,entertainment,
+baomoi.com,entertainment,
+webtoon.com,entertainment,
+wattpad.com,entertainment,
+truyenfull.vn,entertainment,
+nettruyen.com,entertainment,
+mangadex.org,entertainment,
+cartoonnetwork.com,entertainment,
+nick.com,entertainment,
+disneyjunior.com,entertainment,
+vtvgo.vn,entertainment,
+htv.com.vn,entertainment,
+onplus.vn,entertainment,
+facebook.com,social,
+fb.com,social,
+messenger.com,social,
+instagram.com,social,
+threads.net,social,
+x.com,social,
+twitter.com,social,
+snapchat.com,social,
+reddit.com,social,
+pinterest.com,social,
+linkedin.com,social,
+tumblr.com,social,
+discord.com,social,
+discordapp.com,social,
+telegram.org,social,
+web.telegram.org,social,
+whatsapp.com,social,
+zalo.me,social,
+chat.zalo.me,social,
+zaloapp.com,social,
+viber.com,social,
+line.me,social,
+signal.org,social,
+tinder.com,social,
+quora.com,social,
+weibo.com,social,
+vk.com,social,
+mastodon.social,social,
+bsky.app,social,
+omegle.com,social,
+ome.tv,social,
+holla.app,social,
+yubo.live,social,
+bigo.tv,social,
+locket.camera,social,
+bereal.com,social,
+lemon8-app.com,social,
+roblox.com,games,
+minecraft.net,games,
+mojang.com,games,
+epicgames.com,games,
+fortnite.com,games,
+steampowered.com,games,
+store.steampowered.com,games,
+steamcommunity.com,games,
+riotgames.com,games,
+leagueoflegends.com,games,
+valorant.com,games,
+garena.vn,games,
+garena.com,games,
+lienquan.garena.vn,games,
+freefire.garena.com,games,
+playtogether.vn,games,
+supercell.com,games,
+clashofclans.com,games,
+clashroyale.com,games,
+brawlstars.com,games,
+blizzard.com,games,
+battle.net,games,
+ea.com,games,
+origin.com,games,
+ubisoft.com,games,
+xbox.com,games,
+playstation.com,games,
+nintendo.com,games,
+miniclip.com,games,
+poki.com,games,
+crazygames.com,games,
+y8.com,games,
+friv.com,games,
+kongregate.com,games,
+itch.io,games,
+gamejolt.com,games,
+roblox.com.vn,games,
+amongus.com,games,
+innersloth.com,games,
+among.us,games,
+genshin.hoyoverse.com,games,
+hoyoverse.com,games,
+mihoyo.com,games,
+pubg.com,games,
+pubgmobile.com,games,
+callofduty.com,games,
+activision.com,games,
+wildrift.leagueoflegends.com,games,
+gamevn.com,games,
+gosu.vn,games,
+mobilegame.vn,games,
+taptap.io,games,
+bluestacks.com,games,
+gog.com,games,
+humblebundle.com,games,
+pokemon.com,games,
+pokemongo.com,games,
+niantic.com,games,
+cookierun.com,games,
+coolmathgames.com,games,
+agar.io,games,
+slither.io,games,
+krunker.io,games,
+skribbl.io,games,
+gartic.io,games,
+adult-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+adult-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+adult-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+adult-sample-04.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+adult-sample-05.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+gambling-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+gambling-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+gambling-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+gambling-sample-04.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+gambling-sample-05.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+violence-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+violence-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+violence-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+violence-sample-04.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+violence-sample-05.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+drugs-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+drugs-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+drugs-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+weapons-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+weapons-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+weapons-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+scam-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+scam-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+scam-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+scam-sample-04.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+scam-sample-05.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+malware-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+malware-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+malware-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+malware-sample-04.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+malware-sample-05.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+selfharm-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+selfharm-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+hate-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+hate-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+hate-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+dating-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+dating-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+dating-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+proxy-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+proxy-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+proxy-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+vpn-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+vpn-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+vpn-sample-03.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+unsafe-chat-sample-01.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+unsafe-chat-sample-02.test,inappropriate,Tên miền mẫu tổng hợp (.test, RFC 6761) – production nạp blocklist công khai thay thế
+example.com,uncategorized,Trung lập / chưa phân loại
+example.org,uncategorized,Trung lập / chưa phân loại
+example.net,uncategorized,Trung lập / chưa phân loại
+iana.org,uncategorized,Trung lập / chưa phân loại
+localhost.localdomain,uncategorized,Trung lập / chưa phân loại
+speedtest.net,uncategorized,Trung lập / chưa phân loại
+fast.com,uncategorized,Trung lập / chưa phân loại
+github.com,uncategorized,Trung lập / chưa phân loại
+gitlab.com,uncategorized,Trung lập / chưa phân loại
+stackoverflow.com,uncategorized,Trung lập / chưa phân loại
+mozilla.org,uncategorized,Trung lập / chưa phân loại
+python.org,uncategorized,Trung lập / chưa phân loại
+weather.com,uncategorized,Trung lập / chưa phân loại
+accuweather.com,uncategorized,Trung lập / chưa phân loại
+maps.google.com,uncategorized,Trung lập / chưa phân loại
+openstreetmap.org,uncategorized,Trung lập / chưa phân loại
